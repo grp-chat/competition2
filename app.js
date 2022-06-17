@@ -20,17 +20,6 @@ console.log("Server listening at " + PORT);
 //------------------------------------------------------------------------------------------------------
 
 
-function Person(id, r1, p1, r2, p2, inOrOut) {
-    this.id = id;
-    this.r1 = r1;
-    this.p1 = p1;
-    this.r2 = r2;
-    this.p2 = p2;
-    this.inOrOut = inOrOut;
-    this.results = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-    this.penalties = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-}
-
 function Stacker(id, routine, warm1, warm2, try1, try2, try3, best) {
     this.id = id;
     this.routine = routine;
@@ -95,14 +84,14 @@ var objSZF = new Person("SZF", 0, 0, 0, 0, false); */
 
 //var objUsers = [objTJY, objLXR, objJL, objLK, objJHA, objSZF];
 
-var stacker1 = new Stacker("LXR", "333", 0, 0, 0, 0, 0, 0);
-var stacker2 = new Stacker("TJY", "333", 0, 0, 0, 0, 0, 0);
-var stacker3 = new Stacker("LK", "333", 0, 0, 0, 0, 0, 0);
-var stacker4 = new Stacker("SZF", "333", 0, 0, 0, 0, 0, 0);
-var stacker5 = new Stacker("JV", "333", 0, 0, 0, 0, 0, 0);
-var stacker6 = new Stacker("JL", "333", 0, 0, 0, 0, 0, 0);
-var stacker7 = new Stacker("JHA", "333", 0, 0, 0, 0, 0, 0);
-var stacker8 = new Stacker("H", "333", 0, 0, 0, 0, 0, 0);
+var stacker1 = new Stacker("JX", "333", 0, 0, 0, 0, 0, 0);
+var stacker2 = new Stacker("JZ", "333", 0, 0, 0, 0, 0, 0);
+var stacker3 = new Stacker("TWN", "333", 0, 0, 0, 0, 0, 0);
+var stacker4 = new Stacker("LJY", "333", 0, 0, 0, 0, 0, 0);
+var stacker5 = new Stacker("LSH", "333", 0, 0, 0, 0, 0, 0);
+var stacker6 = new Stacker("ELI", "333", 0, 0, 0, 0, 0, 0);
+var stacker7 = new Stacker("CUR", "333", 0, 0, 0, 0, 0, 0);
+var stacker8 = new Stacker("RYD", "333", 0, 0, 0, 0, 0, 0);
 var stacker9 = new Stacker("--", "333", 0, 0, 0, 0, 0, 0);
 var stacker10 = new Stacker("--", "333", 0, 0, 0, 0, 0, 0);
 
@@ -119,7 +108,7 @@ var dProperty = ["warm1", "warm2", "try1", "try2", "try3"];
 
 var users = ["JX", "JZ", "TWN", "LJY", "ELI", "CUR", "LSH", "RYD", "KSY"];
 
-var objJX = new Person("JX", 0, 0, 0, 0, false);
+/* var objJX = new Person("JX", 0, 0, 0, 0, false);
 var objJZ = new Person("JZ", 0, 0, 0, 0, false);
 var objTWN = new Person("TWN", 0, 0, 0, 0, false);
 var objLJY = new Person("LJY", 0, 0, 0, 0, false);
@@ -128,7 +117,7 @@ var objCUR = new Person("CUR", 0, 0, 0, 0, false);
 var objLSH = new Person("LSH", 0, 0, 0, 0, false);
 var objRYD = new Person("RYD", 0, 0, 0, 0, false);
 var objKSY = new Person("KSY", 0, 0, 0, 0, false);
-var objUsers = [objJX, objJZ, objTWN, objLJY, objELI, objCUR, objLSH, objRYD, objKSY]; //THIS ARRAY MUST FOLLOW ARRAY SEQUENCE IN INDEX.JS
+var objUsers = [objJX, objJZ, objTWN, objLJY, objELI, objCUR, objLSH, objRYD, objKSY]; */ //THIS ARRAY MUST FOLLOW ARRAY SEQUENCE IN INDEX.JS
 
 
 //------------------------------------------------------------------------------------------------------

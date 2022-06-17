@@ -5,23 +5,35 @@ function Pairing(judge, stacker) {
     this.stacker = stacker;
 }
 
-var pair1 = new Pairing("LXR", "TJY");
+/* var pair1 = new Pairing("LXR", "TJY");
 var pair2 = new Pairing("TJY", "LK");
 var pair3 = new Pairing("LK", "JV");
 var pair4 = new Pairing("JV", "JL");
 var pair5 = new Pairing("JL", "JHA");
 var pair6 = new Pairing("JHA", "LXR");
 var pair7 = new Pairing("SZF", "H");
-var pair8 = new Pairing("H", "SZF");
+var pair8 = new Pairing("H", "SZF"); */
+
+var pair1 = new Pairing("JX", "LSH");
+var pair2 = new Pairing("LSH", "ELI");
+var pair3 = new Pairing("ELI", "LJY");
+var pair4 = new Pairing("LJY", "TWN");
+var pair5 = new Pairing("TWN", "JZ");
+var pair6 = new Pairing("JZ", "RYD");
+var pair7 = new Pairing("RYD", "JX");
+var pair8 = new Pairing("CUR", "RYD");
 /* var pair9 = new Pairing("", "");
 var pair10 = new Pairing("", ""); */
 
 var pairArr = [pair1, pair2, pair3, pair4, pair5, pair6, pair7, pair8];
 
-var stu = ["LXR", "TJY", "LK", "SZF", "JV", "JL", "JHA", "H"];
-var stu2 = ["LXR", "TJY", "LK", "SZF", "JV", "JL", "JHA", "H"];
+/* var stu = ["LXR", "TJY", "LK", "SZF", "JV", "JL", "JHA", "H"];
+var stu2 = ["LXR", "TJY", "LK", "SZF", "JV", "JL", "JHA", "H"]; */
 
-var assignment = "LXR";
+var stu = ["JX", "JZ", "TWN", "LJY", "LSH", "ELI", "CUR", "RYD"];
+var stu2 = ["JX", "JZ", "TWN", "LJY", "LSH", "ELI", "CUR", "RYD"];
+
+var assignment = "CUR";
 var judgeH1 = document.getElementById("judgeH1");
 var stackerH1 = document.getElementById("stackerH1");
 var routineH1 = document.getElementById("routineH1");
@@ -465,34 +477,6 @@ sock.on('clientupdatewincon', data => {
     }
 
 });
-
-/* sock.on('updateonconnect', data => {
-    for (var i = 1; i <= 29; i++) {
-
-        var playerEle = document.getElementById(data.objects[i].player);
-        
-        if (playerEle.tagName === 'DIV') {
-            playerEle.innerHTML = data.objects[i].pcontent;
-        } else if (playerEle.tagName === 'SELECT') {
-            if (nickname != "TCR") {
-                var opt = document.createElement('option');
-                opt.value = data.objects[i].pcontent;
-                opt.innerHTML = data.objects[i].pcontent;
-                playerEle.appendChild(opt);
-                playerEle.value = data.objects[i].pcontent;
-
-            }
-        }
-
-        var timeEle = document.getElementById(data.objects[i].time);
-        timeEle.value = data.objects[i].tcontent;
-
-        var resultEle = document.getElementById(data.objects[i].result);
-        resultEle.value = data.objects[i].rcontent;
-
-        console.log("Update objects complete");
-    }
-}); */
 
 sock.on('chat-to-clients', data => {
     appendMessage(data);
